@@ -1,0 +1,73 @@
+Provider: Yaml
+
+MySql:
+  Host: "127.0.0.1"
+  Port: "3306"
+  Database: "llamapets"
+  User: "root"
+  Password: "klingel_klingel_klangschale"
+
+MongoDB:
+  Uri: "URI_LINK"
+  Database: "llamapets"
+
+PetSettings:
+  EnableShop: true
+  Prices:
+    BEE_PET: 1200
+    CAT_PET: 1200
+    CHICKEN_PET: 1200
+    COW_PET: 1200
+    DOLPHIN_PET: 1200
+    DONKEY_PET: 1200
+    FOX_PET: 1200
+    HORSE_PET: 1200
+    LLAMA_PET: 1200
+    MOOSHROOM_PET: 1200
+    MULE_PET: 1200
+    OCELOT_PET: 1200
+    PANDA_PET: 1200
+    PIG_PET: 1200
+    POLARBEAR_PET: 1200
+    RABBIT_PET: 1200
+    SHEEP_PET: 1200
+    SNOWGOLEM_PET: 1200
+    STRIDER_PET: 1200
+    TURTLE_PET: 1200
+    VILLAGER_PET: 1200
+    WOLF_PET: 1200
+    BLAZE_PET: 1200
+    CAVESPIDER_PET: 1200
+    CREEPER_PET: 1200
+    DROWNED_PET: 1200
+    ELDERGUARDIAN_PET: 1200
+    ENDERMAN_PET: 1200
+    ENDERMITE_PET: 1200
+    EVOKER_PET: 1200
+    GHAST_PET: 1200
+    GUARDIAN_PET: 1200
+    HOGLIN_PET: 1200
+    HUSK_PET: 1200
+    PHANTOM_PET: 1200
+    PIGLIN_PET: 1200
+    PILLAGER_PET: 1200
+    RAVAGER_PET: 1200
+    SILVERFISH_PET: 1200
+    SKELETON_PET: 1200
+    SPIDER_PET: 1200
+    STRAY_PET: 1200
+    VEX_PET: 1200
+    VINDICATOR_PET: 1200
+    WITCH_PET: 1200
+    WITHERSKELETON_PET: 1200
+    ZOGLIN_PET: 1200
+    ZOMBIE_PET: 1200
+    ZOMBIEPIGMAN_PET: 1200
+    ZOMBIEVILLAGER_PET: 1200
+
+Commands:
+  Pet:
+    Name: "pet"
+    Description: "Pet interaction command"
+    Permission: "llamapets.command.pet"
+    Aliases: [ "pets" ]

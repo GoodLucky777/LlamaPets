@@ -1,0 +1,8 @@
+name: LlamaPets
+version: 1.0.0-SNAPSHOT
+authors:
+  - Proxma
+  - Mundschutziii
+api: 1.0.0
+main: net.lldv.llamapets.LlamaPets
+description: An advanced Pet plugin
