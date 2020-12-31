@@ -3,7 +3,7 @@
 A fully working Pet Plugin with about 50 Pets!
 
 > * Download the latest version here: [Download]()
-> * Browse other versions of BanSystem here: [Browse]()
+> * Browse other versions of LlamaPets here: [Browse]()
 
 ### Join our Discord:
 [![d](https://img.shields.io/discord/323953253458903040.svg)](https://discord.gg/Qcuv2f6)
