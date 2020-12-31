@@ -10,6 +10,7 @@ public class ZoglinPet extends Pet {
     public ZoglinPet(FullChunk chunk, CompoundTag nbt) {
         super(chunk, nbt);
         this.setMovementSpeed(1.0f);
+        this.distance = 6;
     }
 
     public int getNetworkId() {

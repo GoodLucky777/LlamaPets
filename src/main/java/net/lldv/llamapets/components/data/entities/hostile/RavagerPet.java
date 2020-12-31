@@ -10,6 +10,7 @@ public class RavagerPet extends Pet {
     public RavagerPet(FullChunk chunk, CompoundTag nbt) {
         super(chunk, nbt);
         this.setMovementSpeed(1.0f);
+        this.distance = 7;
     }
 
     public int getNetworkId() {

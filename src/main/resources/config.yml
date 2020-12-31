@@ -12,6 +12,8 @@ MongoDB:
   Database: "llamapets"
 
 PetSettings:
+  Disabled:
+    - EXAMPLE_PET
   EnableShop: true
   Prices:
     BEE_PET: 1200

@@ -10,8 +10,6 @@ import net.lldv.llamapets.LlamaPets;
 import net.lldv.llamapets.components.data.entities.Pet;
 import net.lldv.llamapets.components.data.PetData;
 
-import java.util.HashMap;
-
 @RequiredArgsConstructor
 public class EventListener implements Listener {
 
@@ -31,9 +29,9 @@ public class EventListener implements Listener {
 
     @EventHandler
     public void on(final PlayerQuitEvent event) {
-        final HashMap<String, Pet> petHashMap = PetData.currentPet;
-        if (petHashMap.get(event.getPlayer().getName()) != null) {
-            final Pet pet = petHashMap.get(event.getPlayer().getName());
+        if (PetData.currentPet.get(event.getPlayer().getName()) != null) {
+            final Pet pet = PetData.currentPet.get(event.getPlayer().getName());
+            PetData.currentPet.remove(event.getPlayer().getName());
             pet.despawnFromAll();
             pet.close();
         }

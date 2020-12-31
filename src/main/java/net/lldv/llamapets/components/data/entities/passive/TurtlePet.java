@@ -10,6 +10,7 @@ public class TurtlePet extends Pet {
     public TurtlePet(FullChunk chunk, CompoundTag nbt) {
         super(chunk, nbt);
         this.movementSpeed = 1.0f;
+        this.distance = 5;
     }
 
     @Override

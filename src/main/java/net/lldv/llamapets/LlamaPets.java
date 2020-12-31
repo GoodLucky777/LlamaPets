@@ -143,7 +143,9 @@ public class LlamaPets extends PluginBase {
         Entity.registerEntity(PetData.Type.ZOMBIEVILLAGER_PET, ZombieVillagerPet.class);
 
         this.getConfig().getSection("PetSettings.Prices").getAll().getKeys(false).forEach(s -> {
-            PetData.cachedPetList.put(s.toLowerCase(), this.getConfig().getDouble("PetSettings.Prices." + s));
+            if (!this.getConfig().getStringList("PetSettings.Disabled").contains(s)) {
+                PetData.cachedPetList.put(s.toLowerCase(), this.getConfig().getDouble("PetSettings.Prices." + s));
+            }
         });
     }
 

@@ -7,6 +7,7 @@ pet.invalid.name: "&cYou pet has an invalid name."
 pet.spawned: "&aYou successfully spawned your pet."
 pet.bought: "&aYou successfully bought the pet &e[0]&a."
 pet.economy.invalid: "&cYou have not enough money to buy this pet."
+pet.removed: "&cYou have removed your current pet."
 
 # - - - Pets - - -
 pet.bee_pet: "Bee Pet"
@@ -68,14 +69,16 @@ ui.petmenu.title: "Pets"
 ui.petmenu.content: ""
 ui.petmenu.mypets: "&8» &5My Pets"
 ui.petmenu.petshop: "&8» &9Pet Shop"
-ui.petmenu.settings: "&8» &4Settings"
+ui.petmenu.remove: "&8» &4Remove current Pet"
 
 ui.availablepets.title: "Available Pets"
 ui.availablepets.label: "Choose one of your pets and apply settings before you create it:"
 ui.availablepets.select: "Select your Pet"
 ui.availablepets.name: "Change your Pet name"
 ui.availablepets.name.placeholder: "Pet name"
-ui.availablepets.baby: "When this is activated, the pet is created as a baby"
+
+ui.selectcolor.title: "Select a color"
+ui.selectcolor.select: "Please select a color for your Pet."
 
 ui.petshop.title: "Pet shop"
 ui.petshop.content: ""

@@ -48,6 +48,7 @@ public class PetData {
                 pet.setColor(this.color.getWoolData());
             }
 
+            PetData.currentPet.remove(player.getName());
             PetData.currentPet.put(player.getName(), entity);
         }
 

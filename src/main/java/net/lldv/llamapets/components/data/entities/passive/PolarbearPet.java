@@ -10,6 +10,7 @@ public class PolarbearPet extends Pet {
     public PolarbearPet(FullChunk chunk, CompoundTag nbt) {
         super(chunk, nbt);
         this.movementSpeed = 1.0f;
+        this.distance = 6;
     }
 
     @Override

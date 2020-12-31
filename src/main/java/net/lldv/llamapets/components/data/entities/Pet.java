@@ -13,7 +13,8 @@ import cn.nukkit.scheduler.Task;
 
 public class Pet extends EntityCreature {
 
-    private Player following;
+    public Player following;
+    public int distance;
 
     public Pet(FullChunk chunk, CompoundTag nbt) {
         super(chunk, nbt);
@@ -22,19 +23,12 @@ public class Pet extends EntityCreature {
 
         this.setDataFlag(DATA_FLAGS, DATA_FLAG_TAMED, true);
         this.movementSpeed = 1.0f;
+        this.distance = 4;
     }
 
     @Override
     public int getNetworkId() {
         return 0;
-    }
-
-    public boolean isBaby() {
-        return false;
-    }
-
-    public boolean canAddColor() {
-        return false;
     }
 
     public void follow(final Player player) {
@@ -51,7 +45,7 @@ public class Pet extends EntityCreature {
         }, 1, 3);
     }
 
-    private void walkTo(final Vector3 target) {
+    public void walkTo(final Vector3 target) {
         if (this.isClosed()) {
             return;
         }
@@ -77,8 +71,8 @@ public class Pet extends EntityCreature {
             this.motionY = this.motionY > .01 ? 0 : this.motionY - .32;
         }
 
-        if (diff > 3) {
-            if (diff > 40) this.teleport(following.getPosition());
+        if (diff > this.distance) {
+            if (diff > 20) this.teleport(following.getPosition());
             this.motionX = this.movementSpeed * 0.5 * (diffX / diff);
             this.motionZ = this.movementSpeed * 0.5 * (diffZ / diff);
         }
@@ -88,7 +82,7 @@ public class Pet extends EntityCreature {
         this.updateMovement();
     }
 
-    private void lookAt(final Vector3 target) {
+    public void lookAt(final Vector3 target) {
         final double diffX = target.getX() - this.getX();
         final double diffZ = target.getZ() - this.getZ();
         final double diffY = target.getY() - this.getY();
@@ -107,7 +101,7 @@ public class Pet extends EntityCreature {
         this.setRotation(yaw, pitch);
     }
 
-    private boolean isJumping() {
+    public boolean isJumping() {
         if (this.onGround) return false;
 
         double dx = this.motionX;

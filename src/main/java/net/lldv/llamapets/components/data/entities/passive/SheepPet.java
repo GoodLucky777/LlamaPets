@@ -35,6 +35,7 @@ public class SheepPet extends Pet {
     public void setColor(int color) {
         this.setDataProperty(new ByteEntityData(3, color));
         this.namedTag.putByte("Color", color);
+        this.saveNBT();
     }
 
 }
