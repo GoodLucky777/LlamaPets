@@ -97,19 +97,15 @@ public class FormWindows {
     }
 
     public void openPetShop(final Player player, final PetData petData) {
-        HashMap<String, Double> pets = PetData.cachedPetList;
-        petData.getOwnedPets().forEach(pets::remove);
-
-        pets.keySet().forEach(u -> {
-            if (player.hasPermission("llamapets.pet." + u.toLowerCase())) {
-                pets.remove(u);
-            }
-        });
+        final HashMap<String, Double> pets = PetData.cachedPetList;
 
         SimpleForm.Builder form = new SimpleForm.Builder(Language.getNP("ui.petshop.title"), Language.getNP("ui.petshop.content"));
-        pets.keySet().forEach(m -> form.addButton(new ElementButton(Language.getNP("ui.petshop.button", this.convertPetToName(m), pets.get(m))), e -> {
-            this.openBuyPet(e, m);
-        }));
+        pets.keySet().forEach(m -> {
+            if (petData.getOwnedPets().contains(m) || player.hasPermission("llamapets.pet." + m.toLowerCase())) return;
+            form.addButton(new ElementButton(Language.getNP("ui.petshop.button", this.convertPetToName(m), pets.get(m))), e -> {
+                this.openBuyPet(e, m);
+            });
+        });
         form.addButton(new ElementButton(Language.getNP("ui.back")), this::openPetMenu);
         form.build().send(player);
     }

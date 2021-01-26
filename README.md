@@ -2,8 +2,8 @@
 
 A fully working Pet Plugin with about 50 Pets!
 
-> * Download the latest version here: [Download]()
-> * Browse other versions of LlamaPets here: [Browse]()
+> * Download the latest version here: [Download](https://cloudburstmc.org/resources/llamapets.646/download)
+> * Browse other versions of LlamaPets here: [Browse](https://cloudburstmc.org/resources/llamapets.646/history)
 
 ### Join our Discord:
 [![d](https://img.shields.io/discord/323953253458903040.svg)](https://discord.gg/Qcuv2f6)
@@ -21,17 +21,17 @@ A fully working Pet Plugin with about 50 Pets!
 * YAML support
 * MySql support
 * Everything is editable
-* API
 
 ---
 
 ## Installation
 
-1. [Download](https://cloudburstmc.org/resources/bansystem.332/download) the .jar file.
+1. [Download](https://cloudburstmc.org/resources/llamapets.646/download) the .jar file.
 2. Paste the file into your plugin folder.
-3. If you want to use MySql, you have to install [DBLib](https://cloudburstmc.org/resources/dblib.12) on your server.
-4. Start your server.
-5. And have fun using LlamaPets.
+3. Make sure that [LlamaEconomy](https://cloudburstmc.org/resources/llamaeconomy.634/) is installed.
+4. If you want to use MySql, you have to install [DBLib](https://cloudburstmc.org/resources/dblib.12) on your server.
+5. Start your server.
+6. And have fun using LlamaPets.
 
 ---
 
@@ -43,33 +43,25 @@ pet |    /pet |    -
 
 **All commands are editable: Permission, Usage, Command name and Command aliases.**
 
-## Developer API
-
 ---
 
-Maven
-```xml
+## Thanks to ZAP-Hosting!
+This project wouldn't be possible without the help of ZAP-Hosting!
+***
+### ZAP-Hosting
+Zap-Hosting is a VPS, Rootserver, (Lifetime) Gameserver, Domain & TeamSpeak 3/5 hosting company. They offer **good quality** servers **at a low price**. This project was also tested on a ZAP-Hosting Server. So if you need a **cheap** vps/gameserver/rootserver/teamspeak3/etc. hoster, ZAP-Hosting is the best choice.
 
-<repository>
-    <id>lldv-repo</id>
-    <url>http://system01.lldv.net:8082/artifactory/libs-snapshot</url>
-</repository>
-```
+Get your own **Server** today here: [Click me](https://zap-hosting.com/lldv)
 
-API
+### Special offer
+Use the code `proxma-20` for a 20% discount
+***
 
-```java
-```
-
-Events
-
-```java
-```
-
----
 
 ![YourKit](https://www.yourkit.com/images/yklogo.png)
 ------
-YourKit supports open source projects with innovative and intelligent tools for monitoring and profiling Java and .NET applications. YourKit is the creator of [YourKit Java Profiler](https://www.yourkit.com/java/profiler/),
+YourKit supports open source projects with innovative and intelligent tools
+for monitoring and profiling Java and .NET applications.
+YourKit is the creator of [YourKit Java Profiler](https://www.yourkit.com/java/profiler/),
 [YourKit .NET Profiler](https://www.yourkit.com/.net/profiler/")
 and [YourKit YouMonitor](https://www.yourkit.com/youmonitor/)
